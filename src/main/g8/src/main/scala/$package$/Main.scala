@@ -1,4 +1,4 @@
-package sandbox
+package $package$
 
 import cats.implicits.string._
 import cats.syntax.semigroup._
