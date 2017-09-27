@@ -14,20 +14,25 @@ Run the following shell command:
 $ sbt new underscoreio/cats-seed.g8
 ~~~
 
-You'll be prompted to enter a project and package name. Press enter twice to accept the defaults:
+You'll be prompted to enter a project and package name.
+Press enter twice to accept the defaults:
 
 ~~~bash
 name [Cats Sandbox]:
 package [sandbox]:
 ~~~
 
-The project will be created in a directory based off of the `name` you specified. If you accepted the defaults, you should be able to run the code as follows:
+The project will be created in a directory
+based off of the `name` you specified.
+If you accepted the defaults
+the directory will be called `cats-sandbox`:
 
 ~~~bash
 $ cd ./cats-sandbox
-$ sbt run
 ~~~
 
+Follow the instructions in the generated `README.md` file
+to download the necessary dependencies and launch a sample app.
 If you see the message "Hello Cats!", you're good to go!
 
 [license]: https://creativecommons.org/publicdomain/zero/1.0/
