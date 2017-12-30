@@ -14,6 +14,6 @@ scalacOptions ++= Seq(
   "-Ypartial-unification" // allow the compiler to unify type constructors of different arities
 )
 
-libraryDependencies += "org.typelevel" %% "cats-core" % "1.0.0-MF"
+libraryDependencies += "org.typelevel" %% "cats-core" % "1.0.0-RC2"
 
 addCompilerPlugin("org.spire-math" %% "kind-projector" % "0.9.3")
