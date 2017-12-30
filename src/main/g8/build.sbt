@@ -14,6 +14,8 @@ scalacOptions ++= Seq(
   "-Ypartial-unification" // allow the compiler to unify type constructors of different arities
 )
 
+scalacOptions in (Compile, console) ++= Seq("-Ywarn-unused:-imports")
+
 libraryDependencies += "org.typelevel" %% "cats-core" % "1.0.0-MF"
 
 addCompilerPlugin("org.spire-math" %% "kind-projector" % "0.9.3")
