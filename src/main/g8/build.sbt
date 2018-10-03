@@ -1,7 +1,7 @@
 name := "$name;format="lower,hyphen"$"
 version := "0.0.1-SNAPSHOT"
 
-scalaVersion := "2.12.3"
+scalaVersion := "2.12.7"
 
 scalacOptions ++= Seq(
   "-encoding", "UTF-8",   // source files are in UTF-8
@@ -14,6 +14,6 @@ scalacOptions ++= Seq(
   "-Ypartial-unification" // allow the compiler to unify type constructors of different arities
 )
 
-libraryDependencies += "org.typelevel" %% "cats-core" % "1.0.0-MF"
+libraryDependencies += "org.typelevel" %% "cats-core" % "1.4.0"
 
 addCompilerPlugin("org.spire-math" %% "kind-projector" % "0.9.3")
