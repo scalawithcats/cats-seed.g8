@@ -1,7 +1,7 @@
 name := "$name;format="lower,hyphen"$"
 version := "0.0.1-SNAPSHOT"
 
-scalaVersion := "2.12.3"
+scalaVersion := "2.12.7"
 
 scalacOptions ++= Seq(
   "-encoding", "UTF-8",   // source files are in UTF-8
@@ -15,7 +15,7 @@ scalacOptions ++= Seq(
 )
 
 scalacOptions in (Compile, console) ++= Seq("-Ywarn-unused:-imports")
+libraryDependencies += "org.typelevel" %% "cats-core" % "1.4.0"
 
-libraryDependencies += "org.typelevel" %% "cats-core" % "1.0.0-MF"
 
 addCompilerPlugin("org.spire-math" %% "kind-projector" % "0.9.3")
