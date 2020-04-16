@@ -12,7 +12,7 @@ You'll need to [SBT][sbt] 0.13.13 or higher to use this template.
 Run the following shell command:
 
 ~~~bash
-$ sbt new underscoreio/cats-seed.g8
+$ sbt new scalawithcats/cats-seed.g8
 ~~~
 
 You'll be prompted to enter a project and package name.
