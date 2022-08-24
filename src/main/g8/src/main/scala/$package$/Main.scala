@@ -1,7 +1,6 @@
 package $package$
 
-import cats.instances.string._
-import cats.syntax.semigroup._
+import cats.implicits._
 
 object Main extends App {
   println("Hello " |+| "Cats!")
