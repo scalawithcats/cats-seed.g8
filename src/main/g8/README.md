@@ -54,7 +54,7 @@ import cats._
 import cats.implicits._
 import cats.data._
 
-scala> "Hello " |+| "Cats!"
+scala> "Hello " + "Cats!"
 res0: String = Hello Cats!
 
 scala>
