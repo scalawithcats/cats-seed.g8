@@ -9,7 +9,7 @@ Copyright $author$. Licensed [CC0 1.0][license].
 
 ## Getting Started
 
-You will need to have Git, Java 8, and [SBT][sbt] installed.
+You will need to have Git, Java 17, and [SBT][sbt] installed.
 You will also need an internet connection to run the exercises.
 All other dependencies are either included with the repo
 or downloaded on demand during compilation.
@@ -46,13 +46,13 @@ to play with small snippets of code:
 > console
 [info] Starting scala interpreter...
 [info]
-Welcome to Scala 2.13.10 (Java HotSpot(TM) 64-Bit Server VM, Java 1.8.0_112).
+Welcome to Scala 3.3.6 (17.0.16, Java OpenJDK 64-Bit Server VM)
 Type in expressions for evaluation. Or try :help.
 
-scala> import cats._, cats.implicits._, cats.data._
-import cats._
-import cats.implicits._
-import cats.data._
+scala> import cats.*, cats.syntax.all.*, cats.data.*
+import cats.*
+import cats.syntax.all.*
+import cats.data.*
 
 scala> "Hello " |+| "Cats!"
 res0: String = Hello Cats!
