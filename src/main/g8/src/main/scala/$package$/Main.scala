@@ -1,7 +1,7 @@
 package $package$
 
-import cats.implicits._
+import cats.syntax.all.*
 
-object Main extends App {
+@main
+def main(): Unit =
   println("Hello " |+| "Cats!")
-}
