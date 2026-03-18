@@ -22,7 +22,7 @@ Start SBT using the `sbt` command to enter SBT's *interactive mode*
 [info] Loading global plugins from <DIRECTORY>
 [info] Loading project definition from <DIRECTORY>
 [info] Set current project to <PROJECT_NAME>
-
+...
 >
 ```
 
@@ -30,13 +30,9 @@ From the SBT prompt you can run the code in `Main.scala`:
 
 ```bash
 > run
-[info] Updating {file:<DIRECTORY>}cats-sandbox...
-[info] Resolving jline#jline;2.14.4 ...
-[info] Done updating.
-[info] Compiling 1 Scala source to <DIRECTORY>...
-[info] Running sandbox.Main
+[info] running sandbox.main
 Hello Cats!
-[success]
+[success] Total time: 0 s, completed ...
 ```
 
 You can also start a *Scala console* (`scala>` prompt)
@@ -44,18 +40,13 @@ to play with small snippets of code:
 
 ```bash
 > console
-[info] Starting scala interpreter...
-[info]
-Welcome to Scala 3.3.6 (17.0.16, Java OpenJDK 64-Bit Server VM)
+Welcome to Scala 3.7.4 (21, Java OpenJDK 64-Bit Server VM).
 Type in expressions for evaluation. Or try :help.
 
 scala> import cats.*, cats.syntax.all.*, cats.data.*
-import cats.*
-import cats.syntax.all.*
-import cats.data.*
 
 scala> "Hello " |+| "Cats!"
-res0: String = Hello Cats!
+val res0: String = Hello Cats!
 
 scala>
 ```

@@ -3,6 +3,7 @@
 // See http://www.foundweekends.org/giter8/testing.html#Using+the+Giter8Plugin for more details.
 lazy val root = (project in file(".")).
   settings(
+    scalaVersion := "3.7.4",
     Test / test := {
       val _ = (Test / g8Test).toTask("").value
     },
